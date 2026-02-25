@@ -46,17 +46,7 @@ b64tool encode "Hello World"
 | `b64tool peel` | Recursively strip multi-layered encoding to reveal original data |
 | `b64tool chain` | Chain multiple encoding steps together for obfuscation testing |
 
-## Learn
 
-This project includes step-by-step learning materials covering security theory, architecture, and implementation.
-
-| Module | Topic |
-|--------|-------|
-| [00 - Overview](learn/00-OVERVIEW.md) | Prerequisites and quick start |
-| [01 - Concepts](learn/01-CONCEPTS.md) | Security theory and real-world breaches |
-| [02 - Architecture](learn/02-ARCHITECTURE.md) | System design and data flow |
-| [03 - Implementation](learn/03-IMPLEMENTATION.md) | Code walkthrough |
-| [04 - Challenges](learn/04-CHALLENGES.md) | Extension ideas and exercises |
 
 
 ## License

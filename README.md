@@ -42,7 +42,7 @@ In real security work you constantly meet encoded data:
 - When interactive: Rich panels/tables to **stderr**, so you can safely do:
   ```bash
   echo "SGVsbG8=" | b64tool decode | other_tool
-
+  ```
   ### Recursive layer peeling (the "star" feature)
 
 -   `peel` iteratively:
@@ -117,6 +117,12 @@ uv run b64tool detect "SGVsbG8gV29ybGQ="
 ### Peel multi-layer encoding
 ```bash
 uv run b64tool peel "5957786c636e516f4a33687a63796370"
+Layer 1: hex (80%)
+Layer 2: base64 (95%)
+
+Final Output:
+alert('xss')
+
 # hex → base64 → alert('xss')
 ```
 ### Chain encodings (build obfuscation)
